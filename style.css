@@ -1,0 +1,285 @@
+/*variables*/
+/*variable backgroud*/
+.mainContacto, footer {
+  border: 2px black ridge;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainContacto {
+  height: 50em;
+}
+
+.formContacto {
+  height: 45em;
+}
+
+.altItem {
+  height: 450px;
+}
+
+header div div {
+  font-family: "Pacifico", cursive;
+}
+
+header div div h1 {
+  font-size: 4em;
+  font-family: "Pacifico", cursive;
+  line-height: 5,2em;
+  margin-bottom: 0;
+}
+
+header div div h3 {
+  font-size: 2em;
+  color: black;
+  line-height: 2,2em;
+  margin: 0;
+  border: 0;
+}
+
+.placeholder-wave {
+  padding: 0%;
+  margin: 0%;
+}
+
+.shake-bottom {
+  -webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+}
+
+.tituHoja {
+  -webkit-animation-name: resaltar;
+          animation-name: resaltar;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#3d3939));
+  background: linear-gradient(white, #3d3939);
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.formuSuscr {
+  padding-left: 0px;
+  padding-right: 3%;
+}
+
+.rot:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.carousel-inner {
+  padding-left: 11rem;
+  padding-right: 5em;
+}
+
+@-webkit-keyframes resaltar {
+  0% {
+    text-shadow: 0;
+  }
+  50% {
+    text-shadow: 1px 1px 2px black, 0 0 1em #08083a, 0 0 0.2em #5b5b6e;
+    color: white;
+  }
+  100% {
+    text-shadow: 0;
+  }
+}
+
+@keyframes resaltar {
+  0% {
+    text-shadow: 0;
+  }
+  50% {
+    text-shadow: 1px 1px 2px black, 0 0 1em #08083a, 0 0 0.2em #5b5b6e;
+    color: white;
+  }
+  100% {
+    text-shadow: 0;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation shake-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+
+.size {
+  height: 40rem;
+}
+
+.imgIndex {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.envLimp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.imgIco {
+  padding-top: 15%;
+  width: 75%;
+  opacity: 75%;
+}
+
+.alin {
+  display: inline;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 35em;
+}
+
+.nosFondo {
+  background-color: white;
+}
+
+@media screen and (max-width: 790px) {
+  .imgIco {
+    display: none;
+  }
+  .formContacto {
+    padding-left: 2%;
+  }
+  .formSuscrip {
+    padding-left: 3%;
+  }
+}
+
+.center-nos {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 1em;
+  padding-right: 2em;
+}
+
+/*boton whatsapp*/
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+
+.my-float {
+  margin: top 16px;
+}
+
+/*fin boton whatsapp*/
+/*# sourceMappingURL=style.css.map */
